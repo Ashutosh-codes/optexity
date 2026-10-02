@@ -1,0 +1,247 @@
+[
+  {
+    "round": 1,
+    "task_id": "de67708c-d340-488a-ba5e-59087b032649",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 23.2,
+    "task_s": 34.0,
+    "final_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+    "downloads": 1,
+    "locator_failures": 0,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 4,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 5,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 6,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 7,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 8,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/country/IN"
+      },
+      {
+        "index": 9,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN"
+      }
+    ],
+    "changes": [
+      "trying prune: {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"button\", name=\"\ue201\") + get_by_role(\"button\", name=\"\ue201\") + locator(\"#selector\") + {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"textbox\", name=\"Search economy\") + {\"key_press\": {\"type\": \"enter\"}}"
+    ]
+  },
+  {
+    "round": 2,
+    "task_id": "43a53ada-b6a3-48fc-bef7-ecd448587d6e",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 22.5,
+    "task_s": 44.0,
+    "final_url": "https://data.worldbank.org/",
+    "downloads": 0,
+    "locator_failures": 3,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      }
+    ],
+    "changes": [
+      "prune reverted: {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"button\", name=\"\ue201\") + get_by_role(\"button\", name=\"\ue201\") + locator(\"#selector\") + {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"textbox\", name=\"Search economy\") + {\"key_press\": {\"type\": \"enter\"}}",
+      "trying prune: {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"button\", name=\"\ue201\") + get_by_role(\"button\", name=\"\ue201\") + locator(\"#selector\") + {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"textbox\", name=\"Search economy\")"
+    ]
+  },
+  {
+    "round": 3,
+    "task_id": "6f1f31b0-6a89-44d5-b6d6-7b4bd22baeef",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 22.2,
+    "task_s": 44.3,
+    "final_url": "https://data.worldbank.org/",
+    "downloads": 0,
+    "locator_failures": 3,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      }
+    ],
+    "changes": [
+      "prune reverted: {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"button\", name=\"\ue201\") + get_by_role(\"button\", name=\"\ue201\") + locator(\"#selector\") + {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"textbox\", name=\"Search economy\")",
+      "trying prune: {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"button\", name=\"\ue201\") + get_by_role(\"button\", name=\"\ue201\") + locator(\"#selector\") + {\"key_press\": {\"type\": \"enter\"}}"
+    ]
+  },
+  {
+    "round": 4,
+    "task_id": "cfc55c0f-3dac-491d-a16a-f3e9dcd1bbce",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 13.0,
+    "task_s": 31.7,
+    "final_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+    "downloads": 1,
+    "locator_failures": 0,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/country/IN"
+      },
+      {
+        "index": 4,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN"
+      }
+    ],
+    "changes": [
+      "prune kept: {\"key_press\": {\"type\": \"enter\"}} + get_by_role(\"button\", name=\"\ue201\") + get_by_role(\"button\", name=\"\ue201\") + locator(\"#selector\") + {\"key_press\": {\"type\": \"enter\"}}",
+      "trying prune: get_by_role(\"textbox\", name=\"Search economy\") + {\"key_press\": {\"type\": \"enter\"}}"
+    ]
+  },
+  {
+    "round": 5,
+    "task_id": "a0f71fa5-30b4-42b4-ba35-94bfb1c44ba1",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 20.9,
+    "task_s": 41.7,
+    "final_url": "https://data.worldbank.org/",
+    "downloads": 0,
+    "locator_failures": 3,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      }
+    ],
+    "changes": [
+      "prune reverted: get_by_role(\"textbox\", name=\"Search economy\") + {\"key_press\": {\"type\": \"enter\"}}",
+      "trying prune: get_by_role(\"textbox\", name=\"Search economy\")"
+    ]
+  },
+  {
+    "round": 6,
+    "task_id": "efce978c-45db-4287-9ee9-b43d8f05cbc6",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 22.5,
+    "task_s": 43.7,
+    "final_url": "https://data.worldbank.org/",
+    "downloads": 0,
+    "locator_failures": 3,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      }
+    ],
+    "changes": [
+      "prune reverted: get_by_role(\"textbox\", name=\"Search economy\")"
+    ]
+  }
+]

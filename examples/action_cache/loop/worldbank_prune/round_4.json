@@ -1,0 +1,68 @@
+{
+  "expected_downloads": 1,
+  "url": "https://data.worldbank.org/",
+  "parameters": {
+    "input_parameters": {},
+    "generated_parameters": {}
+  },
+  "nodes": [
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "input_text": {
+          "command": "get_by_role(\"textbox\", name=\"Search economy\")",
+          "prompt_instructions": "the textbox \"Search economy\"",
+          "skip_prompt": true,
+          "input_text": "India"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "key_press": {
+          "type": "enter"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"link\", name=\"Economy profile Economy profile\")",
+          "prompt_instructions": "the link \"Economy profile Economy profile\"",
+          "skip_prompt": true
+        }
+      }
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"link\", name=\"GDP (current US$)\")",
+          "prompt_instructions": "the link \"GDP (current US$)\"",
+          "skip_prompt": true
+        }
+      }
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"link\", name=\"CSV\")",
+          "prompt_instructions": "the link \"CSV\"",
+          "skip_prompt": true,
+          "expect_download": true,
+          "download_filename": "35bf83e0-3508-40ee-9446-94f4ee243e09"
+        }
+      },
+      "end_sleep_time": 0.0
+    }
+  ]
+}

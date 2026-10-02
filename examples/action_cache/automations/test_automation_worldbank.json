@@ -1,0 +1,20 @@
+{
+  "url": "https://data.worldbank.org/",
+  "expected_downloads": 1,
+  "parameters": {
+    "input_parameters": {},
+    "generated_parameters": {}
+  },
+  "nodes": [
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "agentic_task": {
+          "task": "Search for India using the site's search box and open the India country page. From the India page, open the 'GDP (current US$)' indicator, then download its data as CSV using the page's Download section.",
+          "max_steps": 20,
+          "backend": "browser_use"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "round": 1,
+    "task_id": "a8863b13-9939-4e48-be18-efdd35b57808",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 17.3,
+    "task_s": 29.4,
+    "final_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+    "downloads": 1,
+    "locator_failures": 0,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 1,
+        "kind": "other",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/country/IN"
+      },
+      {
+        "index": 4,
+        "kind": "command",
+        "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN"
+      }
+    ],
+    "changes": [
+      "trying prune: get_by_role(\"textbox\", name=\"Search economy\") + {\"key_press\": {\"type\": \"enter\"}}"
+    ]
+  }
+]

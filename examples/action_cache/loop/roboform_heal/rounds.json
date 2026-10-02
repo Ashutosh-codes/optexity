@@ -1,0 +1,72 @@
+[
+  {
+    "round": 1,
+    "task_id": "7b3f14c8-1411-4555-9380-cbb986350994",
+    "status": "success",
+    "tokens": 2799,
+    "nodes_done_s": 15.1,
+    "task_s": 22.2,
+    "final_url": "https://www.roboform.com/filling-test-all-fields",
+    "downloads": 0,
+    "locator_failures": 1,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      },
+      {
+        "index": 1,
+        "kind": "fallback",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      }
+    ],
+    "changes": [
+      "healed node 1: locator(\"xpath=html/body/div[2]/form/div/div[1]/div[8]/div[2]/input\")"
+    ]
+  },
+  {
+    "round": 2,
+    "task_id": "7b38290d-f627-4862-a7ec-0829d118ddac",
+    "status": "success",
+    "tokens": 0,
+    "nodes_done_s": 9.1,
+    "task_s": 15.8,
+    "final_url": "https://www.roboform.com/filling-test-all-fields",
+    "downloads": 0,
+    "locator_failures": 0,
+    "outcomes": [
+      {
+        "index": 0,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      },
+      {
+        "index": 1,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      },
+      {
+        "index": 2,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      },
+      {
+        "index": 3,
+        "kind": "command",
+        "url_before": "https://www.roboform.com/filling-test-all-fields"
+      }
+    ],
+    "changes": []
+  }
+]
