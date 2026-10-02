@@ -1,0 +1,116 @@
+{
+  "expected_downloads": 1,
+  "url": "https://data.worldbank.org/",
+  "parameters": {
+    "input_parameters": {},
+    "generated_parameters": {}
+  },
+  "nodes": [
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "key_press": {
+          "type": "enter"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"button\", name=\"\ue201\")",
+          "prompt_instructions": "the button \"\ue201\""
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"button\", name=\"\ue201\")",
+          "prompt_instructions": "the button \"\ue201\""
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "input_text": {
+          "command": "locator(\"#selector\")",
+          "prompt_instructions": "the textbox \"Search data e.g. GDP, population, Indonesia\"",
+          "input_text": "India"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "key_press": {
+          "type": "enter"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "input_text": {
+          "command": "get_by_role(\"textbox\", name=\"Search economy\")",
+          "prompt_instructions": "the textbox \"Search economy\"",
+          "input_text": "India"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "key_press": {
+          "type": "enter"
+        }
+      },
+      "end_sleep_time": 0.0
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"link\", name=\"Economy profile Economy profile\")",
+          "prompt_instructions": "the link \"Economy profile Economy profile\""
+        }
+      }
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"link\", name=\"GDP (current US$)\")",
+          "prompt_instructions": "the link \"GDP (current US$)\""
+        }
+      }
+    },
+    {
+      "type": "action_node",
+      "interaction_action": {
+        "max_tries": 3,
+        "click_element": {
+          "command": "get_by_role(\"link\", name=\"CSV\")",
+          "prompt_instructions": "the link \"CSV\"",
+          "expect_download": true,
+          "download_filename": "35bf83e0-3508-40ee-9446-94f4ee243e09"
+        }
+      },
+      "end_sleep_time": 0.0
+    }
+  ]
+}

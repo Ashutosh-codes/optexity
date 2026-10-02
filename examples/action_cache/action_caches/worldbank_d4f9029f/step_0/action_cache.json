@@ -1,0 +1,345 @@
+{
+  "task": "Search for India using the site's search box and open the India country page. From the India page, open the 'GDP (current US$)' indicator, then download its data as CSV using the page's Download section.",
+  "actions": [
+    {
+      "step": 1,
+      "action_index": 0,
+      "action_name": "input",
+      "params": {
+        "index": 45,
+        "text": "India",
+        "clear": true
+      },
+      "url_before": "https://data.worldbank.org/",
+      "url_after": "https://data.worldbank.org/",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "placeholder": "Search economy",
+          "data-reactid": "166",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "Search economy",
+        "text": "Search economy",
+        "xpath": "html/body/div[1]/div/div/div/div[2]/div/section[3]/div/div/div[1]/div[2]/div/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "get_by_role(\"textbox\", name=\"Search economy\")",
+          "kind": "role+name",
+          "score": 72,
+          "match_count": 1
+        },
+        {
+          "locator": "get_by_placeholder(\"Search economy\")",
+          "kind": "placeholder",
+          "score": 64,
+          "match_count": 1
+        },
+        {
+          "locator": "get_by_role(\"textbox\", name=\"Search economy\")",
+          "kind": "role+text",
+          "score": 40,
+          "match_count": 1
+        },
+        {
+          "locator": "locator(\"xpath=html/body/div[1]/div/div/div/div[2]/div/section[3]/div/div/div[1]/div[2]/div/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'India'",
+      "started_download": false,
+      "duration_s": 0.094,
+      "category": "deterministic",
+      "reason": "unique role+name locator"
+    },
+    {
+      "step": 2,
+      "action_index": 0,
+      "action_name": "send_keys",
+      "params": {
+        "keys": "Enter"
+      },
+      "url_before": "https://data.worldbank.org/",
+      "url_after": "https://data.worldbank.org/",
+      "element": null,
+      "locators": [],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Sent keys: Enter",
+      "started_download": false,
+      "duration_s": 0.113,
+      "category": "deterministic",
+      "reason": "fixed parameters, no element"
+    },
+    {
+      "step": 3,
+      "action_index": 0,
+      "action_name": "click",
+      "params": {
+        "index": 2126
+      },
+      "url_before": "https://data.worldbank.org/",
+      "url_after": "https://data.worldbank.org/country/IN",
+      "element": {
+        "tag": "a",
+        "attributes": {
+          "href": "/country/IN"
+        },
+        "role": "link",
+        "name": "Economy profile Economy profile",
+        "text": "Economy profile",
+        "xpath": "html/body/div[1]/div/div/div/div[2]/div/section[3]/div/div/div[2]/div[2]/div/a",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "get_by_role(\"link\", name=\"Economy profile Economy profile\")",
+          "kind": "role+name",
+          "score": 72,
+          "match_count": 1
+        },
+        {
+          "locator": "get_by_role(\"link\", name=\"Economy profile Economy profile\")",
+          "kind": "role+text",
+          "score": 40,
+          "match_count": 1
+        },
+        {
+          "locator": "locator(\"xpath=html/body/div[1]/div/div/div/div[2]/div/section[3]/div/div/div[2]/div[2]/div/a\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Clicked a \"Economy profile\"",
+      "started_download": false,
+      "duration_s": 0.202,
+      "category": "deterministic",
+      "reason": "unique role+name locator"
+    },
+    {
+      "step": 4,
+      "action_index": 0,
+      "action_name": "find_text",
+      "params": {
+        "text": "GDP (current US$)"
+      },
+      "url_before": "https://data.worldbank.org/country/IN",
+      "url_after": "https://data.worldbank.org/country/IN",
+      "element": null,
+      "locators": [],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Scrolled to text: GDP (current US$)",
+      "started_download": false,
+      "duration_s": 0.063,
+      "category": "redundant",
+      "reason": "exploratory, no lasting page effect"
+    },
+    {
+      "step": 5,
+      "action_index": 0,
+      "action_name": "click",
+      "params": {
+        "index": 9251
+      },
+      "url_before": "https://data.worldbank.org/country/IN",
+      "url_after": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "element": {
+        "tag": "a",
+        "attributes": {
+          "href": "/indicator/NY.GDP.MKTP.CD?locations=IN"
+        },
+        "role": "link",
+        "name": "GDP (current US$)",
+        "text": "GDP (current US$)",
+        "xpath": "html/body/div[1]/div/div/div/div[3]/div[1]/div/article/div[2]/section/div/div[2]/div/div[2]/div[2]/div/div[2]/div/a[1]",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "get_by_role(\"link\", name=\"GDP (current US$)\")",
+          "kind": "role+name",
+          "score": 72,
+          "match_count": 1
+        },
+        {
+          "locator": "get_by_role(\"link\", name=\"GDP (current US$)\")",
+          "kind": "role+text",
+          "score": 40,
+          "match_count": 1
+        },
+        {
+          "locator": "locator(\"xpath=html/body/div[1]/div/div/div/div[3]/div[1]/div/article/div[2]/section/div/div[2]/div/div[2]/div[2]/div/div[2]/div/a[1]\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Clicked a \"GDP (current US$)\"",
+      "started_download": false,
+      "duration_s": 0.199,
+      "category": "deterministic",
+      "reason": "unique role+name locator"
+    },
+    {
+      "step": 6,
+      "action_index": 0,
+      "action_name": "scroll",
+      "params": {
+        "down": false,
+        "pages": 2.0,
+        "index": null
+      },
+      "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "url_after": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "element": null,
+      "locators": [],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "🔍 Scrolled up 2.0 pages",
+      "started_download": false,
+      "duration_s": 0.622,
+      "category": "redundant",
+      "reason": "exploratory, no lasting page effect"
+    },
+    {
+      "step": 7,
+      "action_index": 0,
+      "action_name": "click",
+      "params": {
+        "index": 12217
+      },
+      "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "url_after": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "element": {
+        "tag": "a",
+        "attributes": {
+          "href": "https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.CD?downloadformat=csv"
+        },
+        "role": "link",
+        "name": "CSV",
+        "text": "CSV",
+        "xpath": "html/body/div[1]/div/div/div/div[3]/article/aside/div/div[2]/div/p/a[1]",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "get_by_role(\"link\", name=\"CSV\")",
+          "kind": "role+name",
+          "score": 72,
+          "match_count": 1
+        },
+        {
+          "locator": "get_by_role(\"link\", name=\"CSV\")",
+          "kind": "role+text",
+          "score": 40,
+          "match_count": 1
+        },
+        {
+          "locator": "locator(\"xpath=html/body/div[1]/div/div/div/div[3]/article/aside/div/div[2]/div/p/a[1]\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Clicked a \"CSV\"",
+      "started_download": true,
+      "duration_s": 0.286,
+      "category": "deterministic",
+      "reason": "unique role+name locator"
+    },
+    {
+      "step": 8,
+      "action_index": 0,
+      "action_name": "click",
+      "params": {
+        "index": 12217
+      },
+      "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "url_after": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "element": {
+        "tag": "a",
+        "attributes": {
+          "href": "https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.CD?downloadformat=csv"
+        },
+        "role": "link",
+        "name": "CSV",
+        "text": "CSV",
+        "xpath": "html/body/div[1]/div/div/div/div[3]/article/aside/div/div[2]/div/p/a[1]",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "get_by_role(\"link\", name=\"CSV\")",
+          "kind": "role+name",
+          "score": 72,
+          "match_count": 1
+        },
+        {
+          "locator": "get_by_role(\"link\", name=\"CSV\")",
+          "kind": "role+text",
+          "score": 40,
+          "match_count": 1
+        },
+        {
+          "locator": "locator(\"xpath=html/body/div[1]/div/div/div/div[3]/article/aside/div/div[2]/div/p/a[1]\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Clicked a \"CSV\"",
+      "started_download": false,
+      "duration_s": 0.243,
+      "category": "deterministic",
+      "reason": "unique role+name locator"
+    },
+    {
+      "step": 9,
+      "action_index": 0,
+      "action_name": "done",
+      "params": {
+        "text": "Successfully searched for India, navigated to the India country page, opened the 'GDP (current US$)' indicator, and downloaded the data as CSV from the Download section.",
+        "success": true,
+        "files_to_display": []
+      },
+      "url_before": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "url_after": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=IN",
+      "element": null,
+      "locators": [],
+      "error": null,
+      "is_done": true,
+      "success": true,
+      "extracted_content": "Successfully searched for India, navigated to the India country page, opened the 'GDP (current US$)' indicator, and downloaded the data as CSV from the Download section.",
+      "started_download": false,
+      "duration_s": 0.001,
+      "category": "redundant",
+      "reason": "completion report, no browser effect"
+    }
+  ]
+}

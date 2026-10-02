@@ -1,0 +1,362 @@
+{
+  "task": "fill the full name as myname, address line one as xyz and line 2 as abc, city as SF",
+  "actions": [
+    {
+      "step": 2,
+      "action_index": 0,
+      "action_name": "input",
+      "params": {
+        "index": 20,
+        "text": "myname",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "04fullname",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[5]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[5]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'myname'",
+      "duration_s": 0.094,
+      "category": "redundant",
+      "reason": "overwritten by action 4"
+    },
+    {
+      "step": 2,
+      "action_index": 1,
+      "action_name": "input",
+      "params": {
+        "index": 23,
+        "text": "xyz",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "10address1",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[8]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[8]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'xyz'",
+      "duration_s": 0.045,
+      "category": "redundant",
+      "reason": "overwritten by action 5"
+    },
+    {
+      "step": 2,
+      "action_index": 2,
+      "action_name": "input",
+      "params": {
+        "index": 24,
+        "text": "abc",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "11address2",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[9]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[9]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'abc'",
+      "duration_s": 0.042,
+      "category": "redundant",
+      "reason": "overwritten by action 6"
+    },
+    {
+      "step": 2,
+      "action_index": 3,
+      "action_name": "input",
+      "params": {
+        "index": 25,
+        "text": "SF",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "13adr_city",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[10]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[10]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'SF'",
+      "duration_s": 0.033,
+      "category": "redundant",
+      "reason": "overwritten by action 7"
+    },
+    {
+      "step": 5,
+      "action_index": 0,
+      "action_name": "input",
+      "params": {
+        "index": 20,
+        "text": "myname",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "04fullname",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[5]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[5]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'myname'",
+      "duration_s": 0.068,
+      "category": "deterministic",
+      "reason": "unique xpath locator"
+    },
+    {
+      "step": 5,
+      "action_index": 1,
+      "action_name": "input",
+      "params": {
+        "index": 23,
+        "text": "xyz",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "10address1",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[8]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[8]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'xyz'",
+      "duration_s": 0.042,
+      "category": "deterministic",
+      "reason": "unique xpath locator"
+    },
+    {
+      "step": 5,
+      "action_index": 2,
+      "action_name": "input",
+      "params": {
+        "index": 24,
+        "text": "abc",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "11address2",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[9]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[9]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'abc'",
+      "duration_s": 0.041,
+      "category": "deterministic",
+      "reason": "unique xpath locator"
+    },
+    {
+      "step": 5,
+      "action_index": 3,
+      "action_name": "input",
+      "params": {
+        "index": 25,
+        "text": "SF",
+        "clear": true
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": {
+        "tag": "input",
+        "attributes": {
+          "type": "text",
+          "size": "20",
+          "name": "13adr_city",
+          "value": "",
+          "style": ""
+        },
+        "role": "textbox",
+        "name": "",
+        "text": null,
+        "xpath": "html/body/div[2]/form/div/div[1]/div[10]/div[2]/input",
+        "frame_id": null
+      },
+      "locators": [
+        {
+          "locator": "locator(\"xpath=html/body/div[2]/form/div/div[1]/div[10]/div[2]/input\")",
+          "kind": "xpath",
+          "score": 10,
+          "match_count": 1
+        }
+      ],
+      "error": null,
+      "is_done": false,
+      "success": null,
+      "extracted_content": "Typed 'SF'",
+      "duration_s": 0.032,
+      "category": "deterministic",
+      "reason": "unique xpath locator"
+    },
+    {
+      "step": 7,
+      "action_index": 0,
+      "action_name": "done",
+      "params": {
+        "text": "Successfully filled the form with Full Name: myname, Address Line 1: xyz, Address Line 2: abc, and City: SF.",
+        "success": true,
+        "files_to_display": []
+      },
+      "url_before": "https://www.roboform.com/filling-test-all-fields",
+      "url_after": "https://www.roboform.com/filling-test-all-fields",
+      "element": null,
+      "locators": [],
+      "error": null,
+      "is_done": true,
+      "success": true,
+      "extracted_content": "Successfully filled the form with Full Name: myname, Address Line 1: xyz, Address Line 2: abc, and City: SF.",
+      "duration_s": 0.001,
+      "category": "redundant",
+      "reason": "completion report, no browser effect"
+    }
+  ]
+}
