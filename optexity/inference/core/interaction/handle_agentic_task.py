@@ -1,7 +1,9 @@
 import logging
 
 from browser_use import Agent, BrowserSession, Tools
+from browser_use.agent.views import AgentHistoryList
 
+from optexity.inference.core.interaction.action_cache import ActionCacheRecorder
 from optexity.inference.infra.browser import Browser
 from optexity.inference.models import normalize_model
 from optexity.inference.models.chat_litellm import build_agent_llm
@@ -11,8 +13,33 @@ from optexity.schema.actions.interaction_action import (
 )
 from optexity.schema.memory import Memory
 from optexity.schema.task import Task
+from optexity.schema.token_usage import TokenUsage
 
 logger = logging.getLogger(__name__)
+
+
+def token_usage_from_history(history: AgentHistoryList) -> TokenUsage:
+    """Map the browser-use run's usage summary onto Optexity's TokenUsage.
+
+    browser-use fills ``history.usage`` at the end of ``agent.run`` (the Agent
+    is built with ``calculate_cost=True``). Costs come from browser-use's own
+    pricing table, so they are 0 for a model it has no pricing for; the token
+    counts are always filled. Completion tokens already include reasoning
+    tokens (see ChatLiteLLM._usage), so nothing is added on top.
+    """
+    usage = history.usage
+    if usage is None:
+        return TokenUsage()
+    return TokenUsage(
+        input_tokens=usage.total_prompt_tokens,
+        output_tokens=usage.total_completion_tokens,
+        total_tokens=usage.total_tokens,
+        calculated_total_tokens=usage.total_prompt_tokens
+        + usage.total_completion_tokens,
+        input_cost=usage.total_prompt_cost,
+        output_cost=usage.total_completion_cost,
+        total_cost=usage.total_cost,
+    )
 
 
 async def handle_agentic_task(
@@ -57,6 +84,12 @@ async def handle_agentic_task(
         )
         step_directory.mkdir(parents=True, exist_ok=True)
 
+        recorder = (
+            ActionCacheRecorder(browser, agentic_task_action.task)
+            if isinstance(agentic_task_action, AgenticTask)
+            else None
+        )
+
         agent = Agent(
             task=agentic_task_action.task,
             llm=llm,
@@ -65,11 +98,18 @@ async def handle_agentic_task(
             tools=tools,
             calculate_cost=True,
             save_conversation_path=step_directory,
+            register_action_start_callback=(
+                recorder.on_action_start if recorder else None
+            ),
+            register_action_end_callback=recorder.on_action_end if recorder else None,
         )
         logger.debug(f"Starting browser session for agentic task {browser.cdp_url} ")
         await agent.browser_session.start()
         logger.debug(f"Finally running agentic task on browser_use {browser.cdp_url} ")
         history = await agent.run(max_steps=agentic_task_action.max_steps)
+        memory.token_usage += token_usage_from_history(history)
+        if recorder:
+            recorder.save(step_directory / "action_cache.json")
         logger.debug(f"Agentic task completed on browser_use {browser.cdp_url} ")
 
         agent.stop()

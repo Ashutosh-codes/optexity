@@ -36,6 +36,7 @@ from optexity.inference.core.logging import (
 )
 from optexity.inference.infra.actual_browser import ActualBrowser
 from optexity.inference.infra.browser_health import consume_browser_restart_request
+from optexity.schema.automation import Automation
 from optexity.schema.enums import ExitCodes
 from optexity.schema.inference import InferenceRequest
 from optexity.schema.memory import Memory, SystemInfo
@@ -607,6 +608,10 @@ async def task_processor():
                     )
                 continue
 
+            local_automation_path = os.getenv("OPTEXITY_LOCAL_AUTOMATION")
+            if local_automation_path:
+                apply_local_automation_override(task, local_automation_path)
+
             task_running = True
             last_task_start_time = datetime.now(timezone.utc)
             current_task_timeout_minutes = task.max_timeout_in_minutes
@@ -621,6 +626,26 @@ async def task_processor():
             task_running = False
             last_task_start_time = None
             current_task_timeout_minutes = None
+
+
+def apply_local_automation_override(task: Task, automation_path: str) -> None:
+    """Run ``task`` with the automation in ``automation_path`` instead of the
+    one fetched from the server, and keep its artifacts under ``./runs``.
+
+    Only used for local development (``OPTEXITY_LOCAL_AUTOMATION``). The file's
+    declared input parameter values act as defaults, because optexity
+    otherwise ignores them and only substitutes the request's values.
+    """
+    with open(automation_path, "r") as f:
+        automation = Automation.model_validate(json.load(f))
+    task.automation = automation
+    task.input_parameters = {
+        **automation.parameters.input_parameters,
+        **task.input_parameters,
+    }
+    task.save_directory = pathlib.Path("runs").resolve()
+    task.logs_directory.mkdir(parents=True, exist_ok=True)
+    task.downloads_directory.mkdir(parents=True, exist_ok=True)
 
 
 async def register_with_master():
